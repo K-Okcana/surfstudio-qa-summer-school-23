@@ -55,7 +55,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я указываю фамилию "Semenikhina"',
+                name: 'И Я указываю фамилию "Ivanov"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -67,7 +67,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я указываю дату рождения "1998-11-14"',
+                name: 'И Я указываю дату рождения "1992-01-10"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -79,7 +79,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я указываю имя "Daria"',
+                name: 'И Я указываю имя "Oleg"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -91,31 +91,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я указываю отчество "Evgenevna"',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'И Я перехожу далее',
-                multiLineStrings: <String>[],
-                table: null,
-                dependencies: dependencies,
-                skip: skip,
-              );
-            },
-            (
-              TestDependencies dependencies,
-              bool skip,
-            ) async {
-              return await runStep(
-                name: 'И Я выбираю город "Voronezh"',
+                name: 'И Я указываю отчество "Evgenevich"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -139,7 +115,7 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я выбираю "Sleep" из интересов',
+                name: 'И Я выбираю город "Omsk"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,
@@ -163,7 +139,31 @@ class _CustomGherkinIntegrationTestRunner extends GherkinIntegrationTestRunner {
               bool skip,
             ) async {
               return await runStep(
-                name: 'И Я заполняю заметку о себе "Тестовая заметка о себе"',
+                name: 'И Я выбираю "Photo" из интересов',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'И Я перехожу далее',
+                multiLineStrings: <String>[],
+                table: null,
+                dependencies: dependencies,
+                skip: skip,
+              );
+            },
+            (
+              TestDependencies dependencies,
+              bool skip,
+            ) async {
+              return await runStep(
+                name: 'И Я заполняю заметку о себе "Заметка о себе"',
                 multiLineStrings: <String>[],
                 table: null,
                 dependencies: dependencies,

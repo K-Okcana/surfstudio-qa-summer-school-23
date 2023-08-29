@@ -27,5 +27,31 @@ abstract class ProfileStepDefinitions {
             await tester.pump();
           },
         ),
+        when1<String, FlutterWidgetTesterWorld>(
+          RegExp(r'Я указываю имя {string}$'),
+          (name, context) async {
+            final tester = context.world.rawAppDriver;
+            await tester.pumpAndSettle();
+            await tester.enterText(ProfileTestScreen.nameField, name);
+            await tester.pump();
+          },
+        ),
+        when1<String, FlutterWidgetTesterWorld>(
+          RegExp(r'указываю отчество {string}$'),
+          (secondName, context) async {
+            final tester = context.world.rawAppDriver;
+            await tester.pumpAndSettle();
+            await tester.enterText(
+                ProfileTestScreen.secondNameField, secondName);
+            await tester.pump();
+          },
+        ),
+        when<FlutterWidgetTesterWorld>(
+          RegExp(r'Я перехожу далее$'),
+          (context) async {
+            final tester = context.world.rawAppDriver;
+            await tester.tap(ProfileTestScreen.nextBtn);
+          },
+        ),
       ];
 }
